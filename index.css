@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  background: hsl(0, 0%, 98%);
+  
+}
+li,
+a,
+button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+}
+a:hover {
+  color: hsl(0, 0%, 8%);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+}
+.logo {
+  cursor: pointer;
+}
+nav {
+  display: flex;
+}
+.menu {
+  display: flex;
+}
+.nav-links {
+  list-style: none;
+  margin-right: 700px;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 0px 30px;
+}
+.nav-links li img {
+  margin-left: 5px;
+}
+.register-btn {
+  padding: 9px 25px;
+  border-radius: 50px;
+  border: 1px solid hsl(0, 0%, 8%);
+  margin-left: 20px;
+}
+.drop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  width: 180px;
+  float: none;
+  margin: auto;
+  padding: 10px 10px;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.Cdrop {
+  background: rgb(255, 255, 255);
+  margin: 22px -11px;
+  height: 140px;
+  width: 133px;
+  display: none;
+}
+.Cdrop li {
+  padding: 15px;
+}
+.Cdrop a {
+  margin: -16px 20px;
+  position: absolute;
+  left: 0;
+}
+.Fdrop {
+  background: rgb(255, 255, 255);
+  margin: 20px 0px;
+  margin-left: -100px;
+  display: none;
+}
+
+.Fdrop li {
+  padding: 9px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Fdrop a {
+  position: absolute;
+  left: 70px;
+}
+.Fdrop img {
+  position: absolute;
+  left: 35px;
+}
+nav ul li:hover > ul {
+  display: flex;
+}
+.hamburger-close {
+  display: none;
+}
+.hamburger-menu {
+  display: none;
+}
+
+.hero-img-mobile{
+display: none;
+}
+.hero-main{
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+
+}
+.hero-img-desk{
+  width: 487px;
+  height: 72vh;
+  margin: 30px 45px 0px 0px ;
+}
+.hero-desc{
+  margin: 60px;
+}
+.hero-desc h1{
+  font-size: 80px;
+  font-weight: 900;
+  width: 600px;
+}
+.hero-desc p {
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+  width: 570px;
+  margin-top: 45px;
+  font-size: 22px;
+  line-height: 34px;
+  margin-bottom: 60px;
+}
+.hero-desc a{
+  margin-top: 20px;
+  padding: 12px 25px;
+  border-radius: 50px;
+  border: 1px solid hsl(0, 0%, 8%);
+  color: white;
+  background: black;
+  font-weight: 700;
+}
+.hero-desc a:hover{
+  color: black;
+  background: white;
+}
+
+.hero-desc .brands{
+  margin-top: 85px;
+  display: flex; 
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+}
+.hero-desc .brands img{
+  margin-right: 40px;
+  width: 120px;
+}
+
+
+
+
+@media only screen and (max-width: 1590px) {
+  .nav-links {
+    margin-right: 400px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .nav-links {
+    margin-right: 150px;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  body {
+    overflow-x: hidden;
+   
+  }
+  .menu {
+    position: absolute;
+    margin: auto;
+    right: 0px;
+    height: 100vh;
+    width: 60vw;
+    top: 0;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+    transform: translateX(100%);
+    transition: transform 950ms ease-in-out;
+  }
+  .menu-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.301);
+    position: fixed;
+    right: 0px;
+    top: 0;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 550ms ease-in;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+  .nav-links {
+    margin: 0;
+  }
+  .menu .nav-links li {
+    width: 100%;
+    padding: 18px 30px;
+  }
+  .menu .nav-links li:first-child {
+    width: 100%;
+  }
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 32px;
+    z-index: 22222;
+    cursor: pointer;
+  }
+  .hamburger-close {
+    display: none;
+    position: absolute;
+    top: 26px;
+    right: 35px;
+    z-index: 22222;
+    cursor: pointer;
+  }
+  .dis {
+    display: block;
+  }
+  .dis2 {
+    display: none;
+  }
+
+  .register-btn {
+    padding: 13px 45px;
+  }
+  .drop {
+    position: relative;
+    box-shadow: none;
+  }
+  .Fdrop {
+    margin: 0 -13px;
+  }
+  .Cdrop {
+    margin: 0;
+  }
+  .Fdrop li,
+  .Cdrop li {
+    margin: 0 10px;
+    padding: 18px;
+  }
+  .menu .log {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .menu .log .register-btn {
+    width: 200px;
+    margin-left: 0;
+  }
+  .hero-main{
+    display: block;
+  }
+  
+  .hero-img-mobile{
+    display: block;
+    width: 100vw;
+  }
+  .hero-desc{
+    font-family: "Raleway", sans-serif;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+  }
+  .hero-desc h1{
+    width: auto;
+    margin: 14px;
+    font-weight: 700;
+    font-size: 34px;
+  }
+  .hero-desc p{
+    width: auto;
+    color: hsl(0, 0%, 41%);
+    line-height: 30px;
+    font-weight: 600;
+    margin: 10px;
+    font-size: 15px;
+    margin-bottom: 57px;
+  }
+  .hero-desc a{
+    margin-top: 20px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: 1px solid hsl(0, 0%, 8%);
+    color: white;
+    background: black;
+    font-weight: 700;
+  }
+  .hero-desc .brands{
+    gap: 0;
+    margin-top: 40px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+  }
+  .hero-desc .brands img{
+    margin: auto;
+    width: 66px;
+  }
+ 
+  .hero-img-desk{
+    display: none;
+    }
+}
