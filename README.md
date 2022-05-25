@@ -5,8 +5,8 @@
 
 ## Links
 
-Solution URL:
-Live Site URL:
+Solution URL: [Add solution URL here](https://github.com/brahimbouargane/landing_page)  
+Live Site URL: [Add live site URL here](https://landing-pagebihi.netlify.app/)
 
 ## Build with
 
